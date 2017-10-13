@@ -10,6 +10,7 @@ namespace BuscarApi.Models.Poco
         public string _idsitebusca { get; set; }
         public string _tipoveiculo { get; set; }
         public string _0km { get; set; }
+        public string seminovo { get; set; }
         public string _marca { get; set; }
         public string _modelo { get; set; }
         public string _cidade { get; set; }
@@ -19,7 +20,10 @@ namespace BuscarApi.Models.Poco
         public string _anofinal { get; set; }
         public string _particular { get; set; }
         public string _revenda { get; set; }
+        public string _anode { get; set; }
+        public string _anoate { get; set; }
+        public string _tipoparticular { get; set; }
 
-        
+
     }
 }

@@ -21,7 +21,8 @@ namespace BuscarApi.Controllers
 
                 case "1":
 
-                    CrawlerVeiculosSemiNovos Seminovosveiculos = new CrawlerVeiculosSemiNovos(parametrobusca);
+                    CrawlerVeiculosSemiNovos Seminovosveiculos = new CrawlerVeiculosSemiNovos();
+                    return Seminovosveiculos.Crawler(parametrobusca);
 
                     break;
 
