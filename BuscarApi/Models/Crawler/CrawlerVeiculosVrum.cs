@@ -1,7 +1,12 @@
 ﻿using BuscarApi.Models.Poco;
+using HtmlAgilityPack;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Text;
 using System.Web;
 
 namespace BuscarApi.Models.Crawler
@@ -37,7 +42,7 @@ namespace BuscarApi.Models.Crawler
           // SerializerVeiculos( GetVeiculos(htmlveiculos));
             
         }
-        public CrawlerVeiculosSemiNovos()
+        public CrawlerVeiculosVrum()
         {
 
             

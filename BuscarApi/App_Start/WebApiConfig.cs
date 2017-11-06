@@ -12,8 +12,8 @@ namespace BuscarApi
             // Serviços e configuração da API da Web
 
             // Rotas da API da Web
+            config.EnableCors();
             config.MapHttpAttributeRoutes();
-
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

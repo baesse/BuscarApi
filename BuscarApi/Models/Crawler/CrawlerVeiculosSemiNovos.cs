@@ -321,7 +321,13 @@ namespace BuscarApi.Models.Crawler
 
         public String StringFormat(String valoraformatar)
         {
-           
+            
+            valoraformatar = valoraformatar.Replace('"',' ');
+            valoraformatar = valoraformatar.Replace("  ","");
+            valoraformatar = valoraformatar.Replace(">","");
+            valoraformatar = valoraformatar.Replace("\"\\", "\"");
+            valoraformatar = valoraformatar.Replace("\\\"", "\"");
+            valoraformatar = valoraformatar.Replace('\n', ' ');
             valoraformatar = valoraformatar.Replace("\\", "");
             valoraformatar = valoraformatar.Replace("\\\\", "");
             valoraformatar = valoraformatar.Replace("<br>", "");
@@ -332,8 +338,7 @@ namespace BuscarApi.Models.Crawler
             valoraformatar = valoraformatar.Replace("imgError(this)", "");
             valoraformatar = valoraformatar.Replace("width=", "");
             valoraformatar = valoraformatar.Replace("height=", "");
-            valoraformatar = valoraformatar.Replace("60", "");
-            valoraformatar = valoraformatar.Replace("80", "");
+
            
 
             return valoraformatar;
